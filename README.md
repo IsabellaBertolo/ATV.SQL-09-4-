@@ -1,5 +1,6 @@
 # ATV.SQL-09-4-
 ----ATIVIDADE_3
+
 -- adicionar coluna 'sexo' e atribuir os devidos valores a cada aluno
 UPDATE alunos
 SET sexo = 'M';
