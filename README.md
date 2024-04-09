@@ -1,5 +1,4 @@
 # ATV.SQL-09-4-
-
 ----ATIVIDADE_3
 -- adicionar coluna 'sexo' e atribuir os devidos valores a cada aluno
 UPDATE alunos
@@ -32,3 +31,40 @@ WHERE sexo = 'F';
 SELECT SUM(idade) AS soma_idades
 FROM alunos
 WHERE sexo = 'M';
+
+----ATIVIDADE_4
+
+-- calcular média dos alunos com 'b' no nome
+SELECT AVG(idade) AS media_idade
+FROM alunos
+WHERE nome LIKE '%b%' AND sexo = 'M';
+
+-- somar idades dos alunos com 's' no nome
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE nome LIKE '%s%';
+
+-- somar idades dos alunos com 's' no nome
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE nome LIKE '%s%';
+
+-- calcular média das idades das alunas que começam com 'i'
+SELECT AVG(idade) AS media_idade
+FROM alunos
+WHERE nome LIKE 'I%' AND sexo = 'F';
+
+-- calcular média das idades dos alunos que começam com 'g'
+SELECT AVG(idade) AS media_idade
+FROM alunos
+WHERE nome LIKE 'G%' AND sexo = 'M';
+
+-- somar idades das alunas com 'a' no nome
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE nome LIKE '%a%' AND sexo = 'F';
+
+-- somar idades dos alunos com 'f' no nome
+SELECT SUM(idade) AS soma_idades
+FROM alunos
+WHERE nome LIKE '%f%' AND sexo = 'M';
